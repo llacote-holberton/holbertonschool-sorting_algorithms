@@ -1,6 +1,8 @@
 #ifndef SORT_H
 #define SORT_H
 
+#include <stddef.h>   /* Required for size_t type */
+
 /* === Externally provided resources === */
 
 /**
@@ -24,7 +26,7 @@ void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
 /* SortAlgs - Exo 00 - 0-bubble_sort.c  */
-
+void bubble_sort(int *array, size_t size);
 /* SortAlgs - Exo 01 - 1-insertion_sort_list.c  */
 
 /* SortAlgs - Exo 02 - 2-selection_sort.c  */
