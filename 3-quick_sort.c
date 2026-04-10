@@ -33,9 +33,9 @@ void sort_subtree(int *array, int start, int size, size_t total_size)
 			i++;
 			if (i != j)
 			{
-				temp = array[j];
-				array[j] = array[i];
-				array[i] = temp;
+				temp = array[i];
+				array[i] = array[j];
+				array[j] = temp;
 				print_array(array, total_size);
 			}
 		}
